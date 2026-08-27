@@ -1,31 +1,31 @@
 
 #include <iostream>
-
 using namespace std;
 
-int main() {
+int main () {
     cout << "\xC9\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBB\n";
-    cout << "\xBA            Volume do Cilindro          \xBA\n";
+    cout << "\xBA        Conversor de Temperatura        \xBA\n";
     cout << "\xBA \xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD \xBA\n";
     cout << "\xBA              Aula de C++               \xBA\n";
     cout << "\xBA              Joao Felipe               \xBA\n";
     cout << "\xC8\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBC\n";
 
 
-    float altura, raio, volume;
-    float Pi = 3.14;
+    double tempC;
+    double tempF;
 
-    //Entrada de dados do usuario
-    cout << "Vamos Calcular o Volume do Cilindro" << endl;
-    cout << "Primeiro informe a altura do Cilindro: " << endl;
-    cin >> altura;
-    cout << "Agora infrome o raio do Cilindro: " << endl;
-    cin >> raio;
+    cout << "========================\n";
+    cout << "Conversor de Temperatura\n";
+    cout << "========================\n";
 
-    //Calculo do volume
-    volume = Pi * raio * raio * altura;
+    cout << "Informe a temperatura em graus Centigrados: ";
+    cin >> tempC;
 
-    cout << "O volume do Cilindo e: " << volume << endl;
+    //Calculo
+    //Formula de conversão F= (9* C+160)/5
+    tempF = (9 * tempC + 160)/ 5;
+
+    cout << "A temperatura convertida para Fahrenheit e igual a: " << tempF << "F";
 
     return 0;
 }

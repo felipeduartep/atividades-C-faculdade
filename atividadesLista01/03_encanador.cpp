@@ -1,31 +1,29 @@
 
 #include <iostream>
-
 using namespace std;
 
-int main() {
+int main () {
     cout << "\xC9\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBB\n";
-    cout << "\xBA            Volume do Cilindro          \xBA\n";
+    cout << "\xBA          Salario do Encanador          \xBA\n";
     cout << "\xBA \xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD \xBA\n";
     cout << "\xBA              Aula de C++               \xBA\n";
     cout << "\xBA              Joao Felipe               \xBA\n";
     cout << "\xC8\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBC\n";
 
 
-    float altura, raio, volume;
-    float Pi = 3.14;
+    int dias;
 
-    //Entrada de dados do usuario
-    cout << "Vamos Calcular o Volume do Cilindro" << endl;
-    cout << "Primeiro informe a altura do Cilindro: " << endl;
-    cin >> altura;
-    cout << "Agora infrome o raio do Cilindro: " << endl;
-    cin >> raio;
+    //Entrada de dados
+    cout << "Quantos dias o encanador trabalhou? ";
+    cin >> dias;
 
-    //Calculo do volume
-    volume = Pi * raio * raio * altura;
+    //Calculo
+    float salario = (150 * dias);
+    float desconto = (salario * 8)/100;
+    float salarioDescontado = salario - desconto;
 
-    cout << "O volume do Cilindo e: " << volume << endl;
+    //Valor do salario com o desconto
+    cout << "O salario do encanador apos trabalhar " << dias << " dia foi um total de: R$" << salarioDescontado << endl;
 
     return 0;
 }

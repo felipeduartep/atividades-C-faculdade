@@ -1,31 +1,35 @@
 
 #include <iostream>
-
 using namespace std;
 
-int main() {
+int main () {
     cout << "\xC9\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBB\n";
-    cout << "\xBA            Volume do Cilindro          \xBA\n";
+    cout << "\xBA           Troca de Valores             \xBA\n";
     cout << "\xBA \xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD \xBA\n";
     cout << "\xBA              Aula de C++               \xBA\n";
     cout << "\xBA              Joao Felipe               \xBA\n";
     cout << "\xC8\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xCD\xBC\n";
 
 
-    float altura, raio, volume;
-    float Pi = 3.14;
+    double A;
+    double B;
 
-    //Entrada de dados do usuario
-    cout << "Vamos Calcular o Volume do Cilindro" << endl;
-    cout << "Primeiro informe a altura do Cilindro: " << endl;
-    cin >> altura;
-    cout << "Agora infrome o raio do Cilindro: " << endl;
-    cin >> raio;
+    cout << "Insira o valor de A: ";
+    cin >> A;
+    cout << "Insira o valor de B: ";
+    cin >> B;
 
-    //Calculo do volume
-    volume = Pi * raio * raio * altura;
+    //Troca de valores usando uma variavel auxiliar
+    double aux;
+    aux = A;
+    A = B;
+    B = aux;
 
-    cout << "O volume do Cilindo e: " << volume << endl;
+    cout << "=-=-=-=-=-=-=-=-=-=-=-=-=\n";
+    cout << "OS VALORES FORAM TROCADOS\n";
+    cout << "=-=-=-=-=-=-=-=-=-=-=-=-=\n";
+    cout << "Valor de A: " << A << "\n";
+    cout << "Valor de B: " << B << "\n";
 
     return 0;
 }

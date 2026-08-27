@@ -3,5 +3,9 @@ project(atvidadesFaculdade)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(atvidadesFaculdade
-        atividadesLista01/01_volumeCilindro.cpp)
+add_executable(volumeCilindro atividadesLista01/01_volumeCilindro.cpp)
+add_executable(patosEcoelhos atividadesLista01/02_patosEcoelhos.cpp)
+add_executable(encanador atividadesLista01/03_encanador.cpp)
+add_executable(2numeros atividadesLista01/04_valores2numeros.cpp)
+add_executable(conversorTemperatura atividadesLista01/05_converterTemperatura.cpp)
+add_executable(trocarValores atividadesLista01/06_trocaValores.cpp)
