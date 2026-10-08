@@ -18,3 +18,8 @@ add_executable(while "Exemplos Aulas/while.cpp")
 add_executable(divisor "Exemplos Aulas/Divisor.cpp")
 add_executable(array "Exemplos Aulas/Arrays.cpp"
         "Exemplos Aulas/Arrays02.cpp")
+
+add_executable(maiorNumero
+        "Atividades Vetores e Matriz/01_maiorNum.cpp")
+add_executable(menorNum "Atividades Vetores e Matriz/02_menorNum.cpp")
+add_executable(maiorEmenor "Atividades Vetores e Matriz/03_maiorMenorNum.cpp")
